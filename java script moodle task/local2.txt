@@ -1,0 +1,4 @@
+    var a="satheesh"
+     localStorage.setItem("name",a);
+     var b=localStorage.getItem("name");
+     alert(b);

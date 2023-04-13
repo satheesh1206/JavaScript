@@ -1,0 +1,43 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="object.css">
+</head>
+<body>
+    
+<h1 id="head"></h1>
+
+<img id="image"/>
+
+<ul id="ulid">
+<script src="object.js"></script> 
+</body>
+</html>
+
+js:
+
+let recipeObj={
+    title:"Tomato Pasta",
+    imgSrc:"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/recipe-img.png",
+    ingredients:["pasta","oil","onions","salt","Tomato","pasta sauce","cheese"]
+};
+let heading=document.getElementById("head");
+let img=document.getElementById("image");
+let ulist=document.getElementById("ulid");
+
+heading.textContent=recipeObj.title;
+heading.className="modify";
+img.setAttribute("src",recipeObj.imgSrc);
+img.className="image_class";
+for(var i of recipeObj.ingredients)
+{
+    let list=document.createElement("li");
+    list.textContent=i;
+    ulist.appendChild(list);
+}

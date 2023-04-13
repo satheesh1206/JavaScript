@@ -1,0 +1,15 @@
+HTML:
+
+<form>
+        <label>User Name:</label>
+        <input type="text" id="user" value="" placeholder="Enter Name Name"/>
+        <button onclick="get()">click</button>
+</form>
+
+JS:
+
+function get(){
+ var user=document.getElementById("user").value;
+ localStorage.setItem("name", user);
+ alert(localStorage.getItem("name"));
+}

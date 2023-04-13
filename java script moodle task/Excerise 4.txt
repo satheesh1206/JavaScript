@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docement</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body class="body">
+    
+   <table>
+      <thead>
+        <tr>
+           <td>S.NO</td>
+           <td>Name</td>
+           <td>Email</td>
+           <td>Phone</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>vinny kumar</td>
+            <td>vinnykumar01@gmail.com</td>
+            <td>9552553554</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>satheesh</td>
+            <td>satheesh02@gmail.com</td>
+            <td>9552553555</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>ashokkumar</td>
+            <td>ashokkumar03@gmail.com</td>
+            <td>9552553556</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>sakthikumar</td>
+            <td>sakthikumar04@gmail.com</td>
+            <td>9552553557</td>
+         </tbody>
+</table>
+
+</body>            
+</html>
+
+css
+
+table,tr,td{
+    border-collapse: collapse;
+    border-spacing: 10px;
+    color:blue;
+}
+thead,tr{
+    border-collapse:collapse;
+}
